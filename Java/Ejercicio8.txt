@@ -1,0 +1,42 @@
+public class Main {
+    public static void main (String[] args) {
+        Persona yomismo = new Persona();
+        yomismo.setEdad(29);
+        yomismo.setNombre("Bruno");
+        yomismo.setTelefono("No lo pongo xD");
+        
+        System.out.println(yomismo.getEdad());
+        System.out.println(yomismo.getNombre());
+        System.out.println(yomismo.getTelefono());
+    }
+}
+
+public class Persona {
+    private int edad;
+    private String nombre;
+    private String telefono;
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public int getEdad() {
+        return this.edad;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre=nombre;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getTelefono() {
+        return this.telefono;
+    }
+}
